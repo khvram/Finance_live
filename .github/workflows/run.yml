@@ -24,5 +24,5 @@ jobs:
         env:
           GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
         run: |
-          echo "$GCP_CREDENTIALS" > creds.json
+          echo "$GCP_CREDENTIALS" > credentials.json
           python main.py
