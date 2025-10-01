@@ -9,7 +9,7 @@ SHEET_NAME = "Sheet1"                  # tab name
 CREDENTIALS_FILE = "credentials.json"        # path to service account JSON
 
 # --- FETCH DATA ---
-symbol = "AAPL"
+symbol = "SPY"
 ticker = yf.Ticker(symbol)
 price = ticker.history(period="1d")["Close"].iloc[-1]
 
