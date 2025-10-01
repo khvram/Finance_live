@@ -2,7 +2,8 @@ name: Run yfinance Script
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # Runs every 6 hours
+    - cron: "*/10 * * * *"   # every 10 minutes
+
   workflow_dispatch:         # Manual trigger
 
 jobs:
